@@ -11,7 +11,7 @@ public class MyBankApp {
         //Account account = new SavingAccount();
         //Account account = new CurrentAccount();
         ClassPathXmlApplicationContext context =
-                new ClassPathXmlApplicationContext("resources/applicationContext.xml");
+                new ClassPathXmlApplicationContext("applicationContext.xml");
 
         Account account = context.getBean("myAccount", Account.class);
         System.out.println(account.createAccount());
