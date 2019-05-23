@@ -7,4 +7,9 @@ public class CurrentAccount implements Account {
     public String createAccount() {
         return "Current Account Created Successfully.";
     }
+
+    @Override
+    public String cardDetails() {
+        return null;
+    }
 }

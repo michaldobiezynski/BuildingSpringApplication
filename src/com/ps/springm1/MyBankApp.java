@@ -15,5 +15,6 @@ public class MyBankApp {
 
         Account account = context.getBean("myAccount", Account.class);
         System.out.println(account.createAccount());
+        System.out.println(account.cardDetails());
     }
 }
