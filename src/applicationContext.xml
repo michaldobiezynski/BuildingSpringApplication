@@ -14,7 +14,7 @@
     <bean id="myAccount"
           class="com.ps.springm1.model.CurrentAccount"
           autowire="byType"
-          scope="singleton"
+          scope="prototype"
     >
 
         <!--<property name="creditCard" ref="myCard" />-->

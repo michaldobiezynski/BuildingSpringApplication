@@ -18,7 +18,7 @@ public class MyBankApp {
 
         boolean isSame = (account1 == account2);
 
-        System.out.println("Account 1 and Account 2 pointing to the same object " + isSame);
+        System.out.println("Account 1 and Account 2 pointing to the same object: " + isSame);
         System.out.println("Account 1 Hash: " + account1.hashCode());
         System.out.println("Account 2 Hash: " + account2.hashCode());
 
