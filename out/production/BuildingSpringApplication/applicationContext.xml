@@ -4,11 +4,17 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="myCard"
-          class="com.ps.springm1.model.ATMCard" />
+          class="com.ps.springm1.model.CreditCard" />
+
+    <!--<bean id="myAccount"-->
+          <!--class="com.ps.springm1.model.SavingAccount">-->
+        <!--<constructor-arg ref="myCard" />-->
+    <!--</bean>-->
 
     <bean id="myAccount"
-          class="com.ps.springm1.model.SavingAccount">
+          class="com.ps.springm1.model.CurrentAccount">
         <constructor-arg ref="myCard" />
+        <property name="creditCard" ref="myCard" />
     </bean>
 
 </beans>
