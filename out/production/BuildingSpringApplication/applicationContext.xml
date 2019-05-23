@@ -13,7 +13,10 @@
 
     <bean id="myAccount"
           class="com.ps.springm1.model.CurrentAccount"
-        autowire="byType" >
+          autowire="byType"
+          scope="singleton"
+    >
+
         <!--<property name="creditCard" ref="myCard" />-->
     </bean>
 
