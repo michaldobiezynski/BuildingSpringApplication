@@ -7,10 +7,6 @@ public class CurrentAccount implements Account {
 
     private Card creditCard;
 
-    public CurrentAccount(CreditCard creditCard) {
-
-    }
-
     public void setCreditCard(Card creditCard) {
         this.creditCard = creditCard;
     }

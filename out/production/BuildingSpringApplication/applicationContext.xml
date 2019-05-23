@@ -13,7 +13,6 @@
 
     <bean id="myAccount"
           class="com.ps.springm1.model.CurrentAccount">
-        <constructor-arg ref="myCard" />
         <property name="creditCard" ref="myCard" />
     </bean>
 
