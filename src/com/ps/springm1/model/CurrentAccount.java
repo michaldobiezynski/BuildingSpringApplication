@@ -2,9 +2,11 @@ package com.ps.springm1.model;
 
 import com.ps.springm1.Account;
 import com.ps.springm1.Card;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class CurrentAccount implements Account {
 
+    @Autowired
     private Card creditCard;
 
     public void setCreditCard(Card creditCard) {
