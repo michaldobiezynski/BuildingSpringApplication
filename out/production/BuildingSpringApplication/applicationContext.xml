@@ -14,7 +14,8 @@
     <bean id="myAccount"
           class="com.ps.springm1.model.CurrentAccount"
           autowire="byType"
-          scope="prototype"
+          init-method="onInit"
+          destroy-method="onDestroy"
     >
 
         <!--<property name="creditCard" ref="myCard" />-->

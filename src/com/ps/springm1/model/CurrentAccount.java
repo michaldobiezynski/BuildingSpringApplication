@@ -24,4 +24,13 @@ public class CurrentAccount implements Account {
     public String cardDetails() {
         return this.creditCard.cardDetails();
     }
+
+    public void onInit() {
+        System.out.println("onInit method of CurrentAccount has been invoked.");
+    }
+
+    public void onDestroy() {
+        System.out.println("onDestroy method of CurrentAccount has been invoked.");
+    }
+
 }
